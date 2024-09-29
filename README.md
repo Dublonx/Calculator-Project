@@ -1,5 +1,3 @@
-# Calculator
-
 ## Here's Example Output
 ![Alt Image](cl1.jpg)
 ![Alt Image](cl2.jpg)
