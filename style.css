@@ -1,0 +1,99 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Calculator */
+.container {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px #222;
+  padding: 15px;
+  width: 300px;
+  height: 380px;
+  transition: .5s ease;
+}
+
+.dark {
+  background-color: #222;
+  color: #fff;
+  transition: .5s ease;
+}
+
+.container input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #222;
+  outline: none;
+  margin-top: 15px;
+  text-align: right;
+}
+
+.container-button {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.container-button button {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.container-button button:active {
+  background-color: #222;
+  color: #fff;
+}
+
+.container-button .clear,
+.container-button .remove,
+.container-button .equal {
+  background-color: #88D66C;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.container-button .clear:active {
+  background-color: whitesmoke;
+  color: #222;
+}
+
+.container-button .remove:active {
+  background-color: whitesmoke;
+  color: #222;
+}
+
+.container-button .equal:active {
+  background-color: whitesmoke;
+  color: #222;
+}
+
+.container-icon {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+}
+
+.container-icon i {
+  font-size: 14px;
+  background-color: #5c5c5c;
+  border-radius: 50%;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}

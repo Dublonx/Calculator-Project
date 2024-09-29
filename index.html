@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+  <!-- Calculator -->
+  <div class="container" id="conBody">
+    <input type="text"
+    id="display"
+    readonly/>
+    <div class="container-button">
+      <button class="clear" onclick="clear()">C</button>
+      <button data-value('/')>/</button>
+      <button data-value('*')>×</button>
+      <button class="remove" onclick="remove()">R</button>
+      
+      <button data-value('7')>7</button>
+      <button data-value('8')>8</button>
+      <button data-value('9')>9</button>
+      <button data-value('-')>-</button>
+      
+      <button data-value('4')>4</button>
+      <button data-value('5')>5</button>
+      <button data-value('6')>6</button>
+      <button data-value('+')>+</button>
+      
+      <button data-value('1')>1</button>
+      <button data-value('2')>2</button>
+      <button data-value('3')>3</button>
+      <button class="equal" onclick="equal()">=</button>
+      
+      <button class="last-btn" data-value('0')>0</button>
+    </div>
+    <div class="container-icon">
+      <i class="fa-solid fa-circle-half-stroke" id="dark"></i>
+      <i class="fa-brands fa-github" onclick="gitHub()"></i>
+    </div>
+  </div>
+  
+  <!-- javascript -->
+  <script src="script.js"></script>
+  
+</body>
+</html>
